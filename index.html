@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="container p-5 gap-4">
+        <div class="row gap-3 d-flex justify-content-center">
+          <div class="main col p-3">
+            <h4>Basic Details</h4>
+
+            <label
+              for="upload"
+              class="upload_photo d-flex flex-column align-items-center gap-2 p-4"
+            >
+              <i class="fa-solid fa-upload" style="color: #4318ff"></i>
+              <h6 style="color: #4318ff">Upload Image</h6>
+              <small style="color: #b2bad0">PNG,JPEG Files are allowed</small>
+              <input type="file" id="upload" hidden />
+            </label>
+
+            <div class="row mt-4">
+              <div class="col-3">
+                <label for="salute" class="form-label">salutation </label>
+                <select id="salut" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+
+              <div class="col-5">
+                <label for="first_name" class="form-label">First name </label>
+                <input type="text" class="form-control" id="first_name" placeholder="John" />
+              </div>
+
+              <div class="col-4">
+                <label for="last_name" class="form-label">Last Name </label>
+                <input type="text" class="form-control" id="last_name" placeholder="Doe" />
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-6">
+                <label for="email" class="form-label">Email </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="simmmmple@.com"
+                />
+              </div>
+
+              <div class="col-6">
+                <label for="mobile" class="form-label">Mobile number </label>
+                <input type="text" class="form-control" id="mobile" placeholder="enter your number"/>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-6">
+                <label for="date" class="form-label">Date of Birth </label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date"
+                  placeholder="dfrffrr"
+                />
+              </div>
+              <div class="col-4">
+                <label for="gender" class="form-label">Gender </label>
+                <div class="d-flex justify-content-around mt-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="gender"
+                    />
+                    <label class="form-check-label" for="gender2"> male</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="gender2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      female
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-12">
+                <label for="address" class="form-label">Address </label>
+                <input type="text" class="form-control" id="address" placeholder="enter your address" />
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-6">
+                <label class="form-label" for="country">country </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>----select country-----</option>
+                  <option value="1">india</option>
+                  <option value="2">pakisthan</option>
+                  <option value="3">kenya</option>
+                </select>
+              </div>
+
+              <div class="col-6">
+                <label class="form-label" for="country">State </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>----select country-----</option>
+                  <option value="1">kerala</option>
+                  <option value="2">tamil nadhu</option>
+                  <option value="3">goa</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-6">
+                <label for="city" class="form-label">city </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  placeholder="Enter city "
+                />
+              </div>
+
+              <div class="col-6">
+                <label for="post" class="form-label">Pin/Zip </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="post"
+                  placeholder="enter pin/zip"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- second page -->
+
+          <div class="main col p-3">
+            <h4>Advanced Details</h4>
+            <div style="background-color: #fdf4d1" class="row warning">
+              <h6>Sample warning messages - alert</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                sed fermentum felis. Aliquam erat volutpat. Donec faucibus
+                mauris vel nibh sodales feugiat. Donec suscipit felis vitae orci
+                porttitor congue.
+              </p>
+            </div>
+            <div class="row mt-4">
+              <div class="col-6">
+                <label for="height" class="form-label">Height </label>
+                <div class="range">
+                <input type="range" class="form-range" id="height" />
+                <button class="cm">100cm</button>
+              </div>
+              </div>
+              <div class="col-6">
+                <label for="weight" class="form-label">Weight </label>
+                <div class="range">
+                  <input type="range" class="form-range" id="height" />
+                  <button class="cm">100cm</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-5">
+                <label class="form-label" for="color">Choose color </label>
+                <input type="color" class="form-control" id="color" />
+              </div>
+              <div class="col">
+                <label class="form-label" for="temp">Choose templates </label>
+                <div class="col d-flex">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox" id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineCheckbox1"
+                      >Template 1</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineCheckbox2"
+                      >Template 2</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox3"
+                      value="option3"
+                    />
+                    <label class="form-check-label" for="inlineCheckbox3"
+                      >Template 3</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-12">
+                <label for="quali" class="form-quali">Qualifications </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="quali"
+                  placeholder="enter qualifications"
+                />
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-12">
+                <label class="form-label" for="floatingTextarea2"
+                  >About Yourself
+                </label>
+                <textarea
+                  class="form-control"
+                  placeholder="enter here"
+                  id="floatingTextarea2"
+                  style="height: 180px"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="terms"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="terms"
+                    ><span class="terms">I accept terms and conditions </span></label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="footer col-12 py-3">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary me-md-2" type="button">
+                Cancel
+              </button>
+              <button class="btn btn-primary" type="button">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+
+}
+.upload_photo{
+    border: 1px;
+    border: dashed;
+    border-color: #B2BAD0
+}
+body{
+    background: #E9EDF2;
+}
+.main{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.footer{
+    border-radius: 10px;
+    background-color: #fff;
+}
+.form-label{
+    color:  #2B3674;
+font-size: 14px;
+font-weight: 600;
+text-align: left;
+padding: 8px;
+}
+
+.cm{
+    width: 92px;
+height: 50px;
+border-radius: 16px;
+ border: 1px solid #B6BBC7;
+background: #fff;
+color: #2B3674;
+font-size: 15px;
+font-weight: 600;
+line-height: 15px;
+letter-spacing: -0.02em;
+}
+.range{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.warning p{
+    
+font-size: 14px;
+font-weight: 500;
+line-height: 19.32px;
+letter-spacing: -0.02em;
+text-align: left;
+}
+.warning{
+    padding: 10px;
+    margin: 0px;
+    color: #624E17;
+    border-radius: 10px;
+}
+.warning h6{
+font-size: 16px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: -0.02em;
+text-align: left;
+}
+h4{
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #2B3674;
+}
+.me-md-2{
+    background: transparent;
+    color: #2B3674;
+    border: none;
+    }
+    .btn{
+    
+font-size: 15px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: center;
+}
+.form-label::after{
+    content: "*";
+    color: red;
+}
+.form-quali{
+    color:  #2B3674;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    text-align: left;  
+}
+.form-check-label{
+    font-size: 12px;
+font-size: 14px;
+font-weight: 400;
+color:#2B3674;
+;
+
+}
+.terms{
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #2B3674;
+
+}
+.form-control::placeholder{
+    font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #949DB9;
+;
+}
+.form-select{
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+color:#949DB9; 
+padding: 8px;
+}
