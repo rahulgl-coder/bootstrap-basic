@@ -24,23 +24,23 @@
   </head>
   <body>
     <form>
-      <div class="container p-5 gap-4">
+      <div class="container p-3 gap-3 d-flex flex-column">
         <div class="row gap-3 d-flex justify-content-center">
-          <div class="main col p-3">
+          <div class="main col-lg p-3">
             <h4>Basic Details</h4>
-
-            <label
-              for="upload"
-              class="upload_photo d-flex flex-column align-items-center gap-2 p-4"
-            >
-              <i class="fa-solid fa-upload" style="color: #4318ff"></i>
-              <h6 style="color: #4318ff">Upload Image</h6>
-              <small style="color: #b2bad0">PNG,JPEG Files are allowed</small>
-              <input type="file" id="upload" hidden />
-            </label>
-
+            <div class="col-12 mt-3">
+              <label
+                for="upload"
+                class="upload_photo d-flex flex-column align-items-center gap-2 p-4"
+              >
+                <i class="fa-solid fa-upload" style="color: #4318ff"></i>
+                <h6 style="color: #4318ff">Upload Image</h6>
+                <small style="color: #b2bad0">PNG,JPEG Files are allowed</small>
+                <input type="file" id="upload" hidden />
+              </label>
+            </div>
             <div class="row mt-4">
-              <div class="col-3">
+              <div class=" col-md ">
                 <label for="salute" class="form-label">salutation </label>
                 <select id="salut" class="form-select">
                   <option selected>Choose...</option>
@@ -48,19 +48,29 @@
                 </select>
               </div>
 
-              <div class="col-5">
+              <div class=" col-md">
                 <label for="first_name" class="form-label">First name </label>
-                <input type="text" class="form-control" id="first_name" placeholder="John" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first_name"
+                  placeholder="John"
+                />
               </div>
 
-              <div class="col-4">
+              <div class="col-md">
                 <label for="last_name" class="form-label">Last Name </label>
-                <input type="text" class="form-control" id="last_name" placeholder="Doe" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last_name"
+                  placeholder="Doe"
+                />
               </div>
             </div>
 
             <div class="row mt-4">
-              <div class="col-6">
+              <div class="col-md">
                 <label for="email" class="form-label">Email </label>
                 <input
                   type="text"
@@ -70,14 +80,19 @@
                 />
               </div>
 
-              <div class="col-6">
+              <div class="col-md">
                 <label for="mobile" class="form-label">Mobile number </label>
-                <input type="text" class="form-control" id="mobile" placeholder="enter your number"/>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="mobile"
+                  placeholder="enter your number"
+                />
               </div>
             </div>
 
             <div class="row mt-4">
-              <div class="col-6">
+              <div class="  col-md">
                 <label for="date" class="form-label">Date of Birth </label>
                 <input
                   type="date"
@@ -86,7 +101,7 @@
                   placeholder="dfrffrr"
                 />
               </div>
-              <div class="col-4">
+              <div class=" col-lg">
                 <label for="gender" class="form-label">Gender </label>
                 <div class="d-flex justify-content-around mt-2">
                   <div class="form-check">
@@ -115,14 +130,19 @@
             </div>
 
             <div class="row mt-4">
-              <div class="col-12">
+              <div class="col">
                 <label for="address" class="form-label">Address </label>
-                <input type="text" class="form-control" id="address" placeholder="enter your address" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="enter your address"
+                />
               </div>
             </div>
 
             <div class="row mt-4">
-              <div class="col-6">
+              <div class="col-md ">
                 <label class="form-label" for="country">country </label>
                 <select class="form-select" aria-label="Default select example">
                   <option selected>----select country-----</option>
@@ -132,7 +152,7 @@
                 </select>
               </div>
 
-              <div class="col-6">
+              <div class="col-md">
                 <label class="form-label" for="country">State </label>
                 <select class="form-select" aria-label="Default select example">
                   <option selected>----select country-----</option>
@@ -144,7 +164,7 @@
             </div>
 
             <div class="row mt-4">
-              <div class="col-6">
+              <div class="col-md">
                 <label for="city" class="form-label">city </label>
                 <input
                   type="text"
@@ -154,7 +174,7 @@
                 />
               </div>
 
-              <div class="col-6">
+              <div class="col-md">
                 <label for="post" class="form-label">Pin/Zip </label>
                 <input
                   type="text"
@@ -170,7 +190,7 @@
 
           <div class="main col p-3">
             <h4>Advanced Details</h4>
-            <div style="background-color: #fdf4d1" class="row warning">
+            <div style="background-color: #fdf4d1" class="row warning mt-4">
               <h6>Sample warning messages - alert</h6>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -180,34 +200,35 @@
               </p>
             </div>
             <div class="row mt-4">
-              <div class="col-6">
+              <div class="col-sm">
                 <label for="height" class="form-label">Height </label>
-                <div class="range">
-                <input type="range" class="form-range" id="height" />
-                <button class="cm">100cm</button>
-              </div>
-              </div>
-              <div class="col-6">
-                <label for="weight" class="form-label">Weight </label>
                 <div class="range">
                   <input type="range" class="form-range" id="height" />
                   <button class="cm">100cm</button>
                 </div>
               </div>
+              <div class="col-sm">
+                <label for="weight" class="form-label">Weight </label>
+                <div class="range">
+                  <input type="range" class="form-range" id="height" />
+                  <button class="cm">100kg</button>
+                </div>
+              </div>
             </div>
 
             <div class="row mt-4">
-              <div class="col-5">
+              <div class=" color  col-xl-5 col-lg-12 ">
                 <label class="form-label" for="color">Choose color </label>
                 <input type="color" class="form-control" id="color" />
               </div>
-              <div class="col">
+              <div class=" col-xl-6 col-lg-12  ">
                 <label class="form-label" for="temp">Choose templates </label>
-                <div class="col d-flex">
+                <div class="temp d-flex ">
                   <div class="form-check form-check-inline">
                     <input
                       class="form-check-input"
-                      type="checkbox" id="inlineCheckbox1"
+                      type="checkbox"
+                      id="inlineCheckbox1"
                       value="option1"
                     />
                     <label class="form-check-label" for="inlineCheckbox1"
@@ -245,7 +266,7 @@
                 <label for="quali" class="form-quali">Qualifications </label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control mt-4"
                   id="quali"
                   placeholder="enter qualifications"
                 />
@@ -276,7 +297,9 @@
                     value="option3"
                   />
                   <label class="form-check-label" for="terms"
-                    ><span class="terms">I accept terms and conditions </span></label
+                    ><span class="terms"
+                      >I Accept <strong>Terms & Conditions </strong></span
+                    ></label
                   >
                 </div>
               </div>
@@ -286,7 +309,7 @@
 
         <div class="row mt-4">
           <div class="footer col-12 py-3">
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div class=" gap-2 d-flex justify-content-end">
               <button class="btn btn-primary me-md-2" type="button">
                 Cancel
               </button>
