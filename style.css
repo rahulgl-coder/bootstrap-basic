@@ -133,5 +133,9 @@ h4 {
   .warning p{
     font-size: 12px;
   }
+  .gender{
+    width: 70%;
+  }
+
   
 }

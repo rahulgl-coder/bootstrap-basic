@@ -39,8 +39,8 @@
                 <input type="file" id="upload" hidden />
               </label>
             </div>
-            <div class="row mt-4">
-              <div class="col-md">
+            <div class="row mt-4  ">
+              <div class="col-md ">
                 <label for="salute" class="form-label">Salutation </label>
                 <select id="salut" class="form-select">
                   <option selected>Choose...</option>
@@ -48,7 +48,7 @@
                 </select>
               </div>
 
-              <div class="col-md">
+              <div class="col-md mt-md-0 mt-3">
                 <label for="first_name" class="form-label">First name </label>
                 <input
                   type="text"
@@ -58,7 +58,7 @@
                 />
               </div>
 
-              <div class="col-md">
+              <div class="col-md mt-md-0 mt-3">
                 <label for="last_name" class="form-label">Last Name </label>
                 <input
                   type="text"
@@ -80,13 +80,14 @@
                 />
               </div>
 
-              <div class="col-md">
+              <div class="col-md mt-md-0 mt-3">
                 <label for="mobile" class="form-label">Mobile number </label>
                 <input
                   type="text"
                   class="form-control"
                   id="mobile"
                   placeholder="enter your number"
+                  maxlength="10"
                 />
               </div>
             </div>
@@ -102,10 +103,10 @@
                 />
               </div>
 
-              <div class="col-md">
+              <div class="col-md mt-md-0 mt-3 col-sm-6">
                 <label for="gender" class="form-label">Gender </label>
 
-                <div class="d-flex justify-content-around mt-2">
+                <div class=" gender d-flex justify-content-around mt-2">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -151,7 +152,7 @@
                 </select>
               </div>
 
-              <div class="col-md">
+              <div class="col-md mt-md-0 mt-3 ">
                 <label class="form-label" for="country">State </label>
                 <select class="form-select" aria-label="Default select example">
                   <option selected>----select country-----</option>
@@ -173,13 +174,14 @@
                 />
               </div>
 
-              <div class="col-md">
+              <div class="col-md mt-md-0 mt-3">
                 <label for="post" class="form-label">Pin/Zip </label>
                 <input
                   type="text"
                   class="form-control"
                   id="post"
                   placeholder="enter pin/zip"
+                  maxlength="6"
                 />
               </div>
             </div>
@@ -227,9 +229,10 @@
             <div class="row mt-4 align-items-center">
               <div class="color col-xl-5 col-lg-12">
                 <label for="exampleColorInput" class="form-label">Color picker</label>
-<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
               </div>
-              <div class="col-xl-6 col-lg-12">
+              
+              <div class="col-xl-6 col-lg-12 mt-xl-0 mt-3">
                 <label class="form-label" for="temp">Choose templates </label>
                 <div class="temp d-flex">
                   <div class="form-check form-check-inline">
