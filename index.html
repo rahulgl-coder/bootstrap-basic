@@ -40,15 +40,15 @@
               </label>
             </div>
             <div class="row mt-4">
-              <div class=" col-md ">
-                <label for="salute" class="form-label">salutation </label>
+              <div class="col-md">
+                <label for="salute" class="form-label">Salutation </label>
                 <select id="salut" class="form-select">
                   <option selected>Choose...</option>
                   <option>...</option>
                 </select>
               </div>
 
-              <div class=" col-md">
+              <div class="col-md">
                 <label for="first_name" class="form-label">First name </label>
                 <input
                   type="text"
@@ -92,7 +92,7 @@
             </div>
 
             <div class="row mt-4">
-              <div class="  col-md">
+              <div class="col-md">
                 <label for="date" class="form-label">Date of Birth </label>
                 <input
                   type="date"
@@ -101,30 +101,29 @@
                   placeholder="dfrffrr"
                 />
               </div>
-              <div class=" col-lg">
+
+              <div class="col-md">
                 <label for="gender" class="form-label">Gender </label>
+
                 <div class="d-flex justify-content-around mt-2">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="gender"
-                    />
-                    <label class="form-check-label" for="gender2"> male</label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="flexRadioDefault"
-                      id="gender2"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexRadioDefault2">
-                      female
-                    </label>
-                  </div>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="male"
+                   
+                  />
+                  <label class="form-check-label" for="male"> Male</label>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="female"
+                   
+                  />
+
+                  <label class="form-check-label" for="female">Female</label>
+                 
                 </div>
               </div>
             </div>
@@ -142,8 +141,8 @@
             </div>
 
             <div class="row mt-4">
-              <div class="col-md ">
-                <label class="form-label" for="country">country </label>
+              <div class="col-md">
+                <label class="form-label" for="country">Country </label>
                 <select class="form-select" aria-label="Default select example">
                   <option selected>----select country-----</option>
                   <option value="1">india</option>
@@ -165,7 +164,7 @@
 
             <div class="row mt-4">
               <div class="col-md">
-                <label for="city" class="form-label">city </label>
+                <label for="city" class="form-label">City </label>
                 <input
                   type="text"
                   class="form-control"
@@ -186,8 +185,16 @@
             </div>
           </div>
 
+          
+          
+          
+          
           <!-- second page -->
 
+         
+         
+         
+         
           <div class="main col p-3">
             <h4>Advanced Details</h4>
             <div style="background-color: #fdf4d1" class="row warning mt-4">
@@ -199,6 +206,7 @@
                 porttitor congue.
               </p>
             </div>
+
             <div class="row mt-4">
               <div class="col-sm">
                 <label for="height" class="form-label">Height </label>
@@ -216,14 +224,14 @@
               </div>
             </div>
 
-            <div class="row mt-4">
-              <div class=" color  col-xl-5 col-lg-12 ">
-                <label class="form-label" for="color">Choose color </label>
-                <input type="color" class="form-control" id="color" />
+            <div class="row mt-4 align-items-center">
+              <div class="color col-xl-5 col-lg-12">
+                <label for="exampleColorInput" class="form-label">Color picker</label>
+<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
               </div>
-              <div class=" col-xl-6 col-lg-12  ">
+              <div class="col-xl-6 col-lg-12">
                 <label class="form-label" for="temp">Choose templates </label>
-                <div class="temp d-flex ">
+                <div class="temp d-flex">
                   <div class="form-check form-check-inline">
                     <input
                       class="form-check-input"
@@ -307,9 +315,9 @@
           </div>
         </div>
 
-        <div class="row mt-4">
+        <div class="row">
           <div class="footer col-12 py-3">
-            <div class=" gap-2 d-flex justify-content-end">
+            <div class="gap-2 d-flex justify-content-end">
               <button class="btn btn-primary me-md-2" type="button">
                 Cancel
               </button>
