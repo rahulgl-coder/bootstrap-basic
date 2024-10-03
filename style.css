@@ -1,5 +1,8 @@
+
+
+
 * {
-  /* margin: 0px; */
+  font-family: DM Sans;
   box-sizing: border-box;
 }
 .upload_photo {
@@ -28,7 +31,7 @@ body {
   padding: 8px;
 }
 .form-control {
-  border-radius: 14px;
+  border-radius: 10px;
 }
 
 .cm {
@@ -100,7 +103,7 @@ h4 {
   text-align: left;
   color: #949db9;
   padding: 8px;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 .temp{
     white-space: nowrap;
@@ -108,8 +111,12 @@ h4 {
 .form-control-color{
   width: 100%;
 }
+input[type="range"]{
+  -webkit-appearance:none;
+}
 input[type=range]::-webkit-slider-thumb{
   background-color:#4318ff;
+  -webkit-appearance:none;
 }
 @media  screen and (max-width:576px) {
   .warning {
