@@ -48,27 +48,6 @@ body {
   align-items: center;
   gap: 5px;
 }
-
-.warning p {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 19.32px;
-  letter-spacing: -0.02em;
-  text-align: left;
-}
-.warning {
-  padding: 10px;
-  margin: 0px;
-  color: #624e17;
-  border-radius: 10px;
-}
-.warning h6 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: -0.02em;
-  text-align: left;
-}
 h4 {
   font-size: 24px;
   font-weight: 700;
@@ -129,13 +108,14 @@ h4 {
 .form-control-color{
   width: 100%;
 }
+input[type=range]::-webkit-slider-thumb{
+  background-color:#4318ff;
+}
 @media  screen and (max-width:576px) {
-  .warning p{
-    font-size: 12px;
+  .warning {
+    font-size: 10px;
   }
   .gender{
     width: 70%;
   }
-
-  
 }
