@@ -59,10 +59,9 @@ h4 {
   text-align: left;
   color: #2b3674;
 }
-.me-md-2 {
-  background: transparent;
+.btn-light{
   color: #2b3674;
-  border: none;
+
 }
 .btn {
   font-size: 15px;
